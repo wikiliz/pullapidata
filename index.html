@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bitcoin Prices</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/ajaxEmbedded.js"></script>
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script-->
+    <style>
+        div{
+            display: table;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+<div>
+<h3>Bitcoin Converter</h3>
+<p></p>
+
+<form  method="post">
+    <input type="text" name="bitcoin" value="1"></input>
+    <select>
+        <option value="Bitcoin">Bitcoin</option>
+    </select></br>
+
+    <input type="text" name="currency"></input>
+    <select name="selcurrency">
+        <option value="USD">USD</option>
+        <option value="GBP">British Pound</option>
+        <option value="EUR">Euro</option>
+    </select>
+    <input type="submit" value="Calculate"></input>
+</form>
+</div>
+<div id="lastcontainer">
+    <h3> Last 31 days Data Movement for Currencies</h3>
+   <input type="button" name="Generate" value="Generate"/>
+    <table id="table" border="1">
+        <tr>
+            <th>Currency</th>
+            <th>Price</th>
+            <th>Change</th>
+        </tr>
+
+    </table>
+</div>
+</body>
+</html>
+
