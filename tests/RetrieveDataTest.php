@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 08/11/2017
- * Time: 02:59
- */
 
 use PHPUnit\Framework\TestCase;
 class RetrieveDataTest extends TestCase
